@@ -11,7 +11,7 @@ client.connect()
                     name SERIAL PRIMARY KEY NOT NULL,
                     number_games INTEGER NOT NULL,
                     player_character BOOLEAN NOT NULL,
-                    games VARCHAR(256) NOT NULL
+                    games VARCHAR(256) NOT NULL,
                     img VARCHAR(256) NOT NULL
             );
 
