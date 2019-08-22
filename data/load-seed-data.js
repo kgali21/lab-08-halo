@@ -1,14 +1,14 @@
 require('dotenv').config();
 const pg = require('pg');
 const Client = pg.Client;
-const people = require('./characters');
+const people = require('./character');
 
 const client = new Client(process.env.DATABASE_URL);
 
 client.connect()
     .then(() => {
         return Promise.all(
-            people.maps(people => {
+            people.map(people => {
 
                 return client.query(`
                 INSERT INTO people (name, number_games, player_character, games, img)

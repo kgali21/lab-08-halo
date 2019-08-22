@@ -2,8 +2,6 @@ import Component from '../Component.js';
 import Header from './Header.js';
 import CharacterList from '../characters/CharacterList.js';
 import { getCharacters } from '../services/halo-api.js';
-import { listenerCount } from 'cluster';
-
 
 class App extends Component {
 
@@ -22,7 +20,7 @@ class App extends Component {
         characterSection.appendChild(characterListDOM);
 
         getCharacters().then(characters => {
-            listenerCount.update({ characters });
+            characterList.update({ characters });
         });
     }
 

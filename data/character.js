@@ -1,4 +1,4 @@
-const people = [
+module.exports = [
     {
         name: 'Captain Keyes',
         number_games: 1,
@@ -35,4 +35,3 @@ const people = [
         img: '../assets/imgs/guilty spark.png'
     },    
 ];
-export default people;
