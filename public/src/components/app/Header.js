@@ -4,7 +4,12 @@ class Header extends Component {
     renderHTML() {
         return /*html*/`
             <header>
-                <input class="options-button" type="image" src="./src/components/assets/pokedex-lense.png">
+            <img class="logo" src="./assets/Halo Transparent Logo.png" alt="halo logo">
+            <nav class="navigation">
+                    <a href="./">Home</a>
+                    <a href="./">Characters</a>
+                    <a href="./">Add Characters</a>
+            </nav>
             </header>
         `;
     }
