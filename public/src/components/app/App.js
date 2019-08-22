@@ -1,8 +1,5 @@
 import Component from '../Component.js';
 import Header from './Header.js';
-import CharacterList from '../characters/CharacterList.js';
-import character from '../data/character.js';
-
 
 class App extends Component {
 
