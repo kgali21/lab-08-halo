@@ -1,0 +1,27 @@
+{
+  "name": "lab-08-halo",
+  "version": "1.0.0",
+  "description": "Halo server project with character info",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kgali21/lab-08-halo.git"
+  },
+  "author": "Jose and Kam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kgali21/lab-08-halo/issues"
+  },
+  "homepage": "https://github.com/kgali21/lab-08-halo#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.1",
+    "superagent": "^5.1.0"
+  }
+}
