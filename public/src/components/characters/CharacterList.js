@@ -5,7 +5,6 @@ class CharacterList extends Component {
 
     onRender(dom) {
         const character = this.props.character;
-        console.log(character);
         character.forEach(character => {
             
             const props = { character: character };
