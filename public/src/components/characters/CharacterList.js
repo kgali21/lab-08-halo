@@ -1,24 +1,24 @@
 import Component from '../Component.js';
-import PokemonCard from './PokemonCard.js.js';
+import CharacterCard from './CharacterCards.js';
 
-class PokemonList extends Component {
+class CharacterList extends Component {
 
     onRender(dom) {
-        const pokemon = this.props.pokemon;
-        pokemon.forEach(pokemon => {
+        const characters = this.props.characters;
+        characters.forEach(character => {
             
-            const props = { pokemon: pokemon };
-            const pokemonCard = new PokemonCard(props);
-            const pokemonCardDOM = pokemonCard.renderDOM();
-            dom.appendChild(pokemonCardDOM);
+            const props = { character: character };
+            const characterCard = new CharacterCard(props);
+            const characterCardDOM = characterCard.renderDOM();
+            dom.appendChild(characterCardDOM);
         });
     }
 
     renderHTML() {
         return /*html*/ `
-            <ul class="pokemon-display">
+            <ul class="character-display">
         `;
     }
 }
 
-export default PokemonList;
+export default CharacterList;
