@@ -1,6 +1,6 @@
 import Component from '../Component.js';
 import Header from './Header.js';
-import PokemonList from '../pokedex/PokemonList.js';
+import PokemonList from '../characters/CharacterList.js/index.js';
 // import pokemon from '../data/pokemon.js';
 import FilterType from '../options/FilterType.js';
 import Paging from '../options/Paging.js';
