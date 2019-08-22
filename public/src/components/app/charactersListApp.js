@@ -11,14 +11,13 @@ class App extends Component {
         dom.prepend(headerDOM);
 
         const props = {
-            character: []  
+            characters: []  
         };
 
         const characterSection = dom.querySelector('.character-section');
         const characterList = new CharacterList(props);
         const characterListDOM = characterList.renderDOM();
         characterSection.appendChild(characterListDOM);
-
         getCharacters().then(characters => {
             characterList.update({ characters });
         });
