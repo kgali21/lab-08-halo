@@ -9,7 +9,7 @@ const people = [
         name: 'Master Chief',
         number_games: 6,
         player_character: true,
-        games: ['Halo: Combat Evolved', 'Halo 2', 'Halo 3', 'Halo 4', 'Halo 5: Guardians']
+        games: ['Halo: Combat Evolved', 'Halo 2', 'Halo 3', 'Halo 4', 'Halo 5: Guardians', 'Halo: Reach']
     },
     {
         name: 'Arbiter',
