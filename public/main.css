@@ -62,17 +62,6 @@ header {
         justify-content: start;
         width: 25vw;
     }
-    .search-bar {
-        width: 20vw;
-        border-radius: 25px;
-        margin-top: 20px;
-    }
-    
-    .sorter {
-        border-radius: 25px;
-        width: 20vw;
-        margin-top: 20px;
-    }
 
     .paging button {
         width: 20px;
@@ -91,17 +80,6 @@ header {
         flex-direction: column;
         justify-content: start;
         width: 20vw;
-    }
-    .search-bar {
-        width: 15vw;
-        border-radius: 25px;
-        margin-top: 20px;
-    }
-    
-    .sorter {
-        border-radius: 25px;
-        width: 15vw;
-        margin-top: 20px;
     }
 
     .paging button {
@@ -127,7 +105,7 @@ header {
     height: 40px;
 }
 
-.pokedex-section {
+.character-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -137,20 +115,20 @@ header {
     overflow: scroll;
 }
 
-.pokemon-display {
+.character-display {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.pokemon-container {
+.character-container {
     text-transform: capitalize;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    height: 200px;
+    height: 400px;
     width: 200px;
     min-width: 200px;
     border: 1px solid #aaa;
@@ -171,7 +149,6 @@ header {
 }
 
 .name-container p {
-    background-color: cadetblue;
     border-radius: 25px;
     width: 50px;
     height: 20px;
@@ -182,7 +159,7 @@ header {
 }
 
 .image-container {
-    height: 100%;
+    height: 50%;
     object-fit: contain;
 }
 
@@ -191,18 +168,14 @@ header {
     object-fit: contain;
 }
 
-.type-container {
+.games-container {
     display: flex;
     flex-direction: row;
 }
 
-.type-container p {
-    margin: 0 3px;
-    border-radius: 5px;
-    padding: 4px 15px;
-    color: white;
+.game-list {
+    font-size: 13px;
 }
-
 
 
 footer {
