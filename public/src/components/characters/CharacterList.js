@@ -4,8 +4,9 @@ import CharacterCard from './CharacterCards.js';
 class CharacterList extends Component {
 
     onRender(dom) {
-        const characters = this.props.characters;
-        characters.forEach(character => {
+        const character = this.props.character;
+        console.log(character);
+        character.forEach(character => {
             
             const props = { character: character };
             const characterCard = new CharacterCard(props);

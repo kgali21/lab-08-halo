@@ -7,8 +7,8 @@ class Header extends Component {
             <img class="logo" src="./assets/Halo Transparent Logo.png" alt="halo logo">
             <nav class="navigation">
                     <a href="./">Home</a>
-                    <a href="./">Characters</a>
-                    <a href="./">Add Characters</a>
+                    <a href="./characters.html">Characters</a>
+                    <a href="./add-characters.html">Add Characters</a>
             </nav>
             </header>
         `;

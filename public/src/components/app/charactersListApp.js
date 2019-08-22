@@ -10,6 +10,17 @@ class App extends Component {
         const header = new Header();
         const headerDOM = header.renderDOM();
         dom.prepend(headerDOM);
+
+        const props = {
+            character: character   
+        };
+
+        const characterSection = dom.querySelector('.character-section');
+
+        const characterList = new CharacterList(props);
+        const characterListDOM = characterList.renderDOM();
+        characterSection.appendChild(characterListDOM);
+        
         
     }
 
