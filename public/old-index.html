@@ -7,6 +7,7 @@
     <title>Halo Characters</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="form.css">
 </head>
 <body>
     <header>
@@ -18,65 +19,35 @@
         </nav>
     </header>
     <main>
-        <section class="character-section">
-            <p class="paging">
-                <button class="back">◀</button>
-                <button class="next">▶</button>
-            </p>
-            <ul class="character-display">
-                <li class="character-container">
-                    <div class="name-container">
-                        <h2 class="name">Master Chief</h2>
-                        <p class="number-games">Total Games: 6</p>
-                        <p class="playable-character">Yes</p>
-                    </div>
-                    <div class="image-container">
-                        <img src="../assets/imgs/master chief.png" alt="Master Chief">
-                    </div>
-                    <div class="games-container">
-                        <h3>Game Appearances</h3>
-                        <p class="game-list">Halo: Combat Evolved, Halo 2, Halo 3, Halo 4, Halo 5: Guardians, Halo: Reach</p>
-                    </div>
-                </li>
-                <li class="character-container">
-                    <div class="name-container">
-                        <h2 class="name">Cortana</h2>
-                        <p class="number-games">Total Games: 6</p>
-                        <p class="playable-character">no</p>
-                    </div>
-                    <div class="image-container">
-                        <img src="../assets/imgs/cortana.png" alt="Cortana">
-                    </div>
-                    <div class="games-container">
-                        <ul class="game-list">
-                            <li>Halo: Combat Evolved</li>
-                            <li>Halo 2</li>
-                            <li>Halo 3</li>
-                            <li>Halo 4</li>
-                            <li>Halo 5: Guardians</li>
-                            <li>Halo: Reach</li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="character-container">
-                    <div class="name-container">
-                        <h2 class="name">Captain Keyes</h2>
-                        <p class="number-games">Total Games: 1</p>
-                        <p class="playable-character">no</p>
-                    </div>
-                    <div class="image-container">
-                        <img src="../assets/imgs/CaptainKeyesOld.png" alt="Master Chief">
-                    </div>
-                    <div class="games-container">
-                        <ul class="game-list">
-                            <li>Halo: Combat Evolved</li>
-                        </ul>
-                    </div>
-                </li>
-                
-                               
-            </ul>
-        </section>
+            <form class="character-form">
+                    <p>
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text" required placeholder="Name of Character">
+                    </p>
+                    <p>
+                        <label for="number-of-games">Number of Games</label>
+                        <input id="number-of-games" min="1" max="6" name="number-of-games" type="number" required placeholder="Number of Games">
+                    </p>
+                    <p>
+                        <label for="player-character">Playable Character</label>
+                        <input id="player-character" name="player-character" type="radio" required >True
+                        <input id="player-character" name="player-character" type="radio" required >False
+                    </p>
+                    <p>
+                        <label for="first-appearance">First Appearance</label>
+                        <select name="first-appearance" id="first-appearance" required>
+                            <option disabled selected>First Appearace in Series</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="url">Image URL</label>
+                        <input id="url" name="url" type="text" required placeholder="http://character-image.img">
+                    </p>
+                    <p>
+                        <button class="add-character">Add Character</button>
+                    </p>
+            </form>
+
     </main>
     <footer>
 

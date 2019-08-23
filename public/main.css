@@ -115,6 +115,13 @@ header {
     overflow: scroll;
 }
 
+main{
+    height: 80vh;
+    width: auto;
+    background-color: aliceblue;
+    overflow: scroll;
+}
+
 .character-display {
     display: flex;
     flex-wrap: wrap;
