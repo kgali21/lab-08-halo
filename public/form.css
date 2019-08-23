@@ -1,0 +1,26 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.character-form {
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+    border-radius: 5%;
+    width: 33vw;
+    height: 70vh;
+    align-items: left;
+    justify-content: space-around;
+}
+
+.character-form p {
+    margin-left: 100px;
+}
+
+.add-character {
+    margin-left: 25%;
+    background-color: red;
+}
