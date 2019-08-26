@@ -1,4 +1,4 @@
-module.export = [
+module.exports = [
     'Halo: Combat Evolved',
     'Halo 2',
     'Halo 3',

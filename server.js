@@ -28,7 +28,7 @@ app.get('/api/characters', (req, res) => {
             p.img 
         FROM people p
         JOIN games g
-        ON p.game_id = g.id;
+        ON p.games_id = g.id;
     `)
         .then(result => {
             res.json(result.rows);
