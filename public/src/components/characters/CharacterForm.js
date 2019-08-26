@@ -8,7 +8,7 @@ class CharacterFrom extends Component {
             const formData = new FormData(form);
             const character = {
                 name: formData.get('name'),
-                number_games: formData.get('number-of-games'),
+                number_games: +formData.get('number-of-games'),
                 player_character: formData.get('player-character') === 'on',
                 games: formData.get('first-appearance'),
                 img: formData.get('url')
@@ -16,7 +16,7 @@ class CharacterFrom extends Component {
 
             addCharacters(character)
                 .then(() => {
-                    window.location = 'add-characters.html';
+                    window.location = 'characters.html';
                 })
                 .catch(err => {
                     console.log('Character Not Saved', err);

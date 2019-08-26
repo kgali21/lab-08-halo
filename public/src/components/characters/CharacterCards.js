@@ -16,7 +16,7 @@ class CharacterCard extends Component {
         </div>
         <div class="games-container">
             <h3>Game Appearances</h3>
-            <p class="game-list">${character.games}</p>
+            <p class="game-list">${character.game}</p>
         </div>
         </li>
         `;

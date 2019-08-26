@@ -72,10 +72,11 @@ app.get('/api/characters/:id', (req, res) => {
 
 app.post('/api/characters', (req, res) => {
     const people = req.body;
+    console.log(people);
     client.query(`
-        INSERT INTO people (name, number_games, player_character, games, img)
+        INSERT INTO people (name, number_games, player_character, games_id, img)
         VALUES ($1, $2, $3, $4, $5)
-        RETURNING *
+        RETURNING *;
         `,
     [people.name, people.number_games, people.player_character, people.games, people.img])
         .then(result => {
