@@ -8,6 +8,7 @@ client.connect()
     .then(() => {
         return client.query(`
             DROP TABLE IF EXISTS people;
+            DROP TABLE IF EXISTS games;
         `);
     })
     .then(

@@ -1,5 +1,5 @@
 import Component from '../Component.js';
-import { addCharacter } from '../services/halo-api.js';
+import { addCharacters } from '../services/halo-api.js';
 
 class CharacterFrom extends Component {
     onRender(form) {
@@ -14,7 +14,7 @@ class CharacterFrom extends Component {
                 img: formData.get('url')
             };
 
-            addCharacter(character)
+            addCharacters(character)
                 .then(() => {
                     window.location = 'add-characters.html';
                 })
@@ -49,7 +49,7 @@ class CharacterFrom extends Component {
                     <p>
                         <label for="first-appearance">First Appearance</label>
                         <select name="first-appearance" id="first-appearance" required>
-                            <option disabled selected>First Appearace in Series</option>
+                            <option disabled selected>First Appearance in Series</option>
                             ${optionsList.join('')}
                         </select>
                     </p>
