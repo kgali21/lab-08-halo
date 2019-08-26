@@ -14,7 +14,6 @@ class App extends Component {
         return /*html*/`
             <div>
                 <main>
-                    <section class="character-section"></section>
                 </main>
                 <footer></footer>
             </div>
