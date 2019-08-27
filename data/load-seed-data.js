@@ -24,12 +24,13 @@ client.connect()
         return Promise.all(
             people.map(people => {
                 const game = games.find(game => {
-                    return game.name === people.type;
+                    return game.name === people.games;
                 });
+                console.log(game);
                 const gameId = game.id;
 
                 return client.query(`
-                INSERT INTO people (name, number_games, player_character, games, img)
+                INSERT INTO people (name, number_games, player_character, games_id, img)
                 VALUES ($1, $2, $3, $4, $5);
                 `,
                 [people.name, people.number_games, people.player_character, gameId, people.img]);
